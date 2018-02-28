@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let article of article">
+    <a [href]="article.url" target="_blanck">
+      <h4>{{ article.title }}</h4>
+      <h6>{{ article.source.name }}</h6>
+      <span>{{ article.author }}</span>
+      <span>{{ article.publishedAt | date:'shortTime' }}</span>
+      <img [src]="article.urlToImage" [alt]="article.title" *ngIf="article.urlToImage; else noImg">
+      <ng-template #noImg>
+        <img src="assets/no-image.jpg" alt="">
+      </ng-template>
+      <p *ngIf="article.description; else noDescription">{{ article.description }}</p>
+      <ng-template #noDescription>
+        Brak opisu
+      </ng-template>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+:host {
+    padding: 2rem 1rem;
+}
+
+section {
+    text-align: center;
+
+    a {
+        margin-left: .75rem;
+
+        &.active {
+            color: red;
+            border-bottom: 1px solid red;
+        }
+    }
+}

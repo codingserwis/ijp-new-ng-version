@@ -1,0 +1,24 @@
+:host {
+    display: block;
+    margin: 3rem;
+}
+
+ul {
+    list-style: none;
+    
+    li {
+        display: inline-block;
+        width: 30%;
+        min-height: 400px;
+        max-height: 400px;
+        &:not(:nth-child(2n+1)) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

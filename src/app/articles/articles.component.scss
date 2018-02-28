@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    margin: 3rem;
+}
+.test-section {
+    overflow-y: scroll;
+    @media screen and (min-width: 992px) {
+        min-height: 50vh;
+    }
+}
+
+// .test-section {
+// }    
